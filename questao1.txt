@@ -1,0 +1,47 @@
+RESPOSTA DA QUESTÃO 1 - (4,0 pontos)
+1)
+a)	Con?gurar usuário e e-mail localmente e globalmente
+R: git config --global user.email "gabriel.neri956@gmail.com"
+git config --global user.name "Gabrielmunhoz956"
+
+b)	Iniciar um projeto Git local
+R: git init
+
+c)	Criar um ramo, incluir modificações e fazer o merge em outro
+R: git branch , git commit, git merge 
+
+d)	Visualizar diferenças entre referências relativas, absolutas(commits) e ramos. 
+R: Git log --graph
+
+e)	Resolver conflitos de merge.
+git merge --abort 
+
+f)	Visualizar o histórico de commits do projeto. 
+R: git log
+
+g)	Voltar arquivos para versões anteriores. 
+Git restore (nome do arquivo)
+
+h)	Refazer o último commit para alterar a mensagem e/ou incluir mais modi?cações.
+R: git commit -m “Nova mensagem” –amend
+
+i)	Criar chaves públicas para adicionar aos per?s em serviços Web.
+R: ssh-keygen -t rsa
+
+j)	Criar chaves públicas e adicionar a um servidor remoto. 
+R: ssh-keygen -t rsa -C (endereço de email)
+
+k)	Iniciar um repositório remoto Git em um servidor. 
+R: git init -bare
+
+l)	Trabalhe remotamente.
+R:Git remote add origin (endereço do servidor)
+
+m)	Manipule ramos remotos.
+R: git remote --verbose
+
+n)	Adicione endereço remoto.
+R: git remote add
+
+o)	Remover ramos de demanda, locais e remotos, já incorporados aos ramos permanentes. 
+R: git branch -D (nome da branch que deve ser removida)

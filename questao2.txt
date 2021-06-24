@@ -1,0 +1,541 @@
+RESPOSTA DA QUESTÃO 2 - (4,0 pontos)
+
+
+1
+git config --global user.email "teste@gmail.com"
+git config --global user.name "Teste"
+R: esse comando ira configurar o nome do usuario e o email para todos os repositorios no Sistema.
+2
+git clone https://github.com/Paulo-UNIRON/citacoes_2021_1.git
+R: Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git clone https://github.com/Paulo-UNIRON/citacoes_2021_1.git
+Cloning into 'citacoes_2021_1'...
+remote: Enumerating objects: 35, done.
+remote: Counting objects: 100% (35/35), done.
+remote: Compressing objects: 100% (22/22), done.
+remote: Total 35 (delta 9), reused 31 (delta 6), pack-reused 0
+Receiving objects: 100% (35/35), 2.49 MiB | 1.56 MiB/s, done.
+Resolving deltas: 100% (9/9), done.
+R: esse Código realiza a clonagem de um repositorio remoto.
+
+cd citacoes_2021_1:
+R: Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1
+            R: esse Código entra no diretorio. 
+
+git remote -v 
+R: Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+$ git remote -v
+origin  https://github.com/Paulo-UNIRON/citacoes_2021_1.git (fetch)
+origin  https://github.com/Paulo-UNIRON/citacoes_2021_1.git (push)
+R: nesse Código ele lista todos os repositorios remotos sendo uma para o fetch e outra para o push.
+
+
+
+
+           git branch 
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+$ git branch
+* master
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+R: nesse Código ele listas todas as branchs do repositorio.
+
+git branch tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+$ git branch tarefa1
+R: nesse codigo ela está criando uma branch com o nome (tarefa1).
+
+git checkout tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+$ git checkout tarefa1
+Switched to branch 'tarefa1'
+R: nesse Código ela está trocando de branch saindo da master e indo para tarefa1
+
+echo 'arquivo 1' > file1.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa1)
+$ echo 'arquivo 1'>file1.txt
+R: nesse codigo ele está criando um arquivo. 
+
+git status
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa1)
+$ git status
+On branch tarefa1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+R: nesse Código ele mostra as situações em que os arquivos se encontram, se foram rastreadas e commitadas.
+
+git add .
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa1)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1
+R: nesse codigo ele ira rastrear um arquivo que ainda não estava sendo rastreado
+
+git commit -m "Commitando arquivo file1.txt"
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa1)
+$ git commit -m "commitando arquivo file1.txt"
+[tarefa1 da6d4f7] commitando arquivo file1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa1)
+$
+R: nesse código ele grava as mudanças no repositorio, commitando arquivos.
+
+
+
+3
+git checkout master
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+R: nesse código ela está trocando de branch saindo da tarefa1 e indo para master
+
+git checkout -b tarefa2 
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (master)
+$ git checkout -b tarefa2
+Switched to a new branch 'tarefa2'
+R: nesse código ele está criando a branch tarefa2 e mudando da master para a tarefa2.
+
+
+git log --oneline --decorate 
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa2)
+$ git log --online --decorate
+fatal: unrecognized argument: --online
+R: nesse código ele lista os commits mostrando em quais branchs cada commit está.
+
+echo 'arquivo 2' > file2.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa2)
+$ echo 'arquivo 2'>file2.txt
+R: nesse codigo ele está criando um arquivo. 
+
+git add .
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa2)
+$ git add .
+warning: LF will be replaced by CRLF in file2.txt.
+The file will have its original line endings in your working directory
+R: nesse codigo ele ira rastrear um arquivo que ainda não estava sendo rastreado
+
+git commit -m "Commitando arquivo file2.txt"
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git/citacoes_2021_1 (tarefa2)
+$ git commit -m "commitando arquivo file2.txt"
+[tarefa2 b658e34] commitando arquivo file2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file2.txt
+R: nesse código ele grava as mudanças no repositorio, commitando arquivos.
+
+4
+git checkout master
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits) 
+R: nesse código ele está trocando a branch tarefa2 e indo para a master.
+
+
+git merge tarefa2
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git merge tarefa2
+merge: tarefa2 - not something we can merge
+R: nesso Código ele está mesclando a branch tarefa2 com a master
+
+git log
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git log
+commit 7f5b8fa0ec349757fc05ab24260efc5f68e560dd (HEAD -> master)
+Author: Gabrielmunhoz956<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 23:31:42 2021 -0300
+
+    uma nova alteração na pagina.html foi feita
+
+commit e26e29127936925be39d69dc6970fed394574d42
+Author: Gabrielmunhoz<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 23:11:44 2021 -0300
+
+    foi feita uma alteração na pagina html para fins de melhoria
+
+commit 170a9fa70db0270ee6622a5235749d64ce0cf541
+Author: Gabrielmunhoz <gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 19:07:16 2021 -0300
+
+    alteração realizado com sucesso
+
+commit 9479261149e5f53a7d77b794dca146e12656756f
+Author: Gabrielmunhoz <Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 19:02:40 2021 -0300
+
+    pagina nova em html foi adicionado
+:...skipping...
+commit 7f5b8fa0ec349757fc05ab24260efc5f68e560dd (HEAD -> master)
+Author: Gabrielmunhoz956<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 23:31:42 2021 -0300
+
+    uma nova alteração na pagina.html foi feita
+
+commit e26e29127936925be39d69dc6970fed394574d42
+Author: Gabrielmunhoz956<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 23:11:44 2021 -0300
+
+    foi feita uma alteração na pagina html para fins de melhoria
+
+commit 170a9fa70db0270ee6622a5235749d64ce0cf541
+Author: Gabrielmunhoz956 <Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 19:07:16 2021 -0300
+
+    alteração realizado com sucesso
+
+commit 9479261149e5f53a7d77b794dca146e12656756f
+Author: Gabrielmunhoz956<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 19:02:40 2021 -0300
+
+    pagina nova em html foi adicionado
+
+commit 6909518d5e1f4b886d7df82763f2014c7886c5ae
+Author: Gabriel.neri956<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 18:20:30 2021 -0300
+
+    pagina intriduzida na brench
+
+commit 16877bce178a00cea68c646bd475a506106aeb1f
+Author:  Gabriel.neri956<Gabriel.neri956@gmail.com>
+Date:   Tue Jun 22 17:43:51 2021 -0300
+
+    criados as paginas web e pagina inicial ambas da web em html
+commit 7a060fbe388ce570c54aaf6fb3d7231b2f5cad2d (origin/master)
+Author: Gabriel.neri956<Gabriel.neri956@gmail.com>
+Date:   Thu Jun 17 21:35:17 2021 -0300
+
+    adionamos arquivo html
+R: nesse código ele mostra todos os commits e suas informações.
+
+git remote -v
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git remote -v
+origin  https://github.com/FranciscoBastos-12/Curso-git.git (fetch)
+origin  https://github.com/FranciscoBastos-12/Curso-git.git (push)
+R: nesse Código ele lista todos os repositorios remotos sendo uma para o fetch e outra para o push.
+
+5
+git branch -d tarefa2
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git branch -d tarefa2
+error: branch 'tarefa2' not found.
+R: nesse Código ele está apagando a branch tarefa2
+
+git checkout tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git checkout tarefa1
+Switched to branch 'tarefa1'
+R: nesse Código ela está trocando de branch saindo da master e indo para tarefa1
+
+git log –oneline
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git log --online
+fatal: unrecognized argument: --online
+R: nesse código ele ira mostrar os commits de uma forma resumida.
+echo 'nova frase no arquivo 1' >> file1.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ echo 'nova frase no arquivo1'>>file1.txt
+R: nesse código ele esta fazendo modificações no file1.txt
+
+echo 'arquivo 3' > file3.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ echo 'arquivo3'>file3.txt
+R: nesse código ele está criando um novo arquivo.
+
+git status
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git status
+On branch tarefa1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        citacoes_2021_1/
+        file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+R: nesse Código ele mostra as situações em que os arquivos se encontram, se foram rastreadas e commitadas.
+
+git add file1.txt file3.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git add file1.txt file3.txt
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in file3.txt.
+The file will have its original line endings in your working directory
+R: nesse Código ele ira rastrear os arquivos.
+
+git commit -m "Adicionado file3.txt e modificado file1.txt"
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git commit -m "adicionando file3.txt e modificando file1.txt"
+[tarefa1 b7cbe33] adicionando file3.txt e modificando file1.txt
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file3.txt
+R: nesse código ele grava as mudanças no repositorio, commitando arquivos.
+6
+git checkout master
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+R: nesse Código ela está trocando de branch saindo da tarefa1 e indo para master
+
+
+git merge tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git merge tarefa1
+Updating 7f5b8fa..b7cbe33
+Fast-forward
+ file1.txt   | 2 ++
+ file3.txt   | 1 +
+ pagina.html | 6 +++++-
+ 3 files changed, 8 insertions(+), 1 deletion(-)
+ create mode 100644 file1.txt
+ create mode 100644 file3.txt
+R: nesse código ele está mesclando a tarefa1 com a master.
+7
+git log --graph --oneline --decorate
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git log --graph --oneline --decorate
+* b7cbe33 (HEAD -> master, tarefa1) adicionando file3.txt e modificando file1.txt
+* 528d72a commitando arquivo file1.txt
+* 7f5b8fa uma nova alteração na pagina.html foi feita
+* e26e291 foi feita uma alteração na pagina html para fins de melhoria
+* 170a9fa alteração realizado com sucesso
+* 9479261 pagina nova em html foi adicionado
+* 6909518 pagina intriduzida na brench
+* 16877bc criados as paginas web e pagina inicial ambas da web em html
+* 7a060fb (origin/master) adionamos arquivo html
+R: nesse código ele lista os commits separando em quais branchs cada commit está.
+
+8
+git rebase master tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git rebase master tarefa1
+Current branch tarefa1 is up to date.
+R: nesse Código ele mescal as duas branchs simplificando o historico do projeto.
+9
+git checkout -b tarefa2
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git checkout -b tarefa2
+Switched to a new branch 'tarefa2'
+R: nesse código ele está criando a branch tarefa2 e mudando da master para a tarefa2.
+
+echo 'tarefa2: escrevi primeiro' >> file1.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa2)
+$ echo 'tarefa2: escrevi primeiro'>>file1.txt
+R: nesse código ele esta fazendo modificações no file1.txt
+
+git status
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa2)
+$ git status
+On branch tarefa2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        citacoes_2021_1/
+no changes added to commit (use "git add" and/or "git commit -a")
+R: nesse Código ele mostra as situações em que os arquivos se encontram, se foram rastreadas e commitadas.
+
+git add .
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa2)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+warning: adding embedded git repository: citacoes_2021_1
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> citacoes_2021_1
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached citacoes_2021_1
+hint:
+hint: See "git help submodule" for more information.
+R: nesse codigo ele ira rastrear o arquivo. 
+
+git commit -a -m "tarefa2 escrevendo primeiro"
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa2)
+$ git commit -a -m "tarefa2 escrevendo primeiro"
+[tarefa2 9ee4407] tarefa2 escrevendo primeiro
+ 2 files changed, 2 insertions(+)
+ create mode 160000 citacoes_2021_1
+R: nesse código ele ira gravar as mudanças no repositório, commitando os arquivos.
+
+10
+git checkout tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa2)
+$ git checkout tarefa1
+warning: unable to rmdir 'citacoes_2021_1': Directory not empty
+Switched to branch 'tarefa1'
+R: nesse Código ela está trocando de branch saindo da master e indo para tarefa1
+
+echo 'tarefa1: escrevendo depois' >> file1.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ echo 'tarefa1: escrevendo depois'>>file1.txt
+R: nesse codigo ele está modificando o file1.txt
+
+git status
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git status
+On branch tarefa1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        citacoes_2021_1/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+R: nesse Código ele mostra as situações em que os arquivos se encontram, se foram rastreadas, modificadas e commitadas.
+
+git diff
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git diff
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+diff --git a/file1.txt b/file1.txt
+index e92e2e1..306a9c5 100644
+--- a/file1.txt
++++ b/file1.txt
+@@ -1,2 +1,3 @@
+ arquivo 1
+ nova frase no arquivo1
++tarefa1: escrevendo depois
+R: nesse Código ele ira revisar a modificação efetuada, verificando as diferenças entre o arquivo alterado e o que foi comitado anteriormente.
+ 
+git commit -a -m "tarefa1 escrevendo depois"
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git commit -a -m "tarefa1 escrevendo depois"
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+[tarefa1 0e961c5] tarefa1 escrevendo depois
+ 1 file changed, 1 insertion(+)
+R: nesse código ele ira gravar as mudanças no repositório, commitando os arquivos.
+
+git log --oneline –decorate
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git log --oneline --decorate
+0e961c5 (HEAD -> tarefa1) tarefa1 escrevendo depois
+b7cbe33 (master) adicionando file3.txt e modificando file1.txt
+528d72a commitando arquivo file1.txt
+7f5b8fa uma nova alteração na pagina.html foi feita
+e26e291 foi feita uma alteração na pagina html para fins de melhoria
+170a9fa alteração realizado com sucesso
+9479261 pagina nova em html foi adicionado
+6909518 pagina intriduzida na brench
+16877bc criados as paginas web e pagina inicial ambas da web em html
+7a060fb (origin/master) adionamos arquivo html
+R: neste codigo ele mostrará o historico resumido apontando a branch de cada commit.
+11
+git checkout master
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (tarefa1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+R: nesse codigo ele ira trocar a branch tarefa1 para a master.
+
+git merge tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git merge tarefa1
+Updating b7cbe33..0e961c5
+Fast-forward
+ file1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+R: nesse código ele está mesclando a tarefa1 com a master.
+
+12
+git checkout tarefa1
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git checkout tarefa1
+error: pathspec 'tarefa' did not match any file(s) known to git
+R: nesse codigo ele ira trocar a branch master para a tarefa1 porém ela não existe mais pois foi mesclada.
+
+13-
+git checkout master
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+R: nesse codigo ele ira trocar a branch tarefa1 para a master.
+
+git merge tarefa2
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master)
+$ git merge tarefa2
+Auto-merging file1.txt
+CONFLICT (content): Merge conflict in file1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+R: nesse código ele está mesclando a tarefa2 com a master.
+
+git status
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master|MERGING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 9 commits.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   citacoes_2021_1
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   file1.txt
+R: nesse Código ele mostra as situações em que os arquivos se encontram, se foram rastreadas, modificadas e commitadas.
+
+git diff
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master|MERGING)
+$ git diff
+diff --cc file1.txt
+index 306a9c5,50b8178..0000000
+--- a/file1.txt
++++ b/file1.txt
+@@@ -1,3 -1,3 +1,7 @@@
+  arquivo 1
+  nova frase no arquivo1
+++<<<<<<< HEAD
+ +tarefa1: escrevendo depois
+++=======
++ tarefa2: escrevi primeiro
+++>>>>>>> tarefa2
+R: nesse Código ele ira revisar a modificação efetuada, verificando as diferenças entre o arquivo alterado e o que foi comitado anteriormente.
+
+notepad file1.txt
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master|MERGING)
+$ notepad file1.txt
+R: nesse codigo o arquivo está indo para o editor de texto do git.
+
+git add .
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master|MERGING)
+$ git add .
+R: nesse código ele ira rastrear os arquivos que não estão sendo rastreados
+
+git commit -m "Resolvendo conflito"
+Windows@DESKTOP-1KG9KJK MINGW64/c/Curso-git (master|MERGING)
+$ git commit -m "resolvendo conflito"
+[master d08f159] resolvendo conflito
+R: nesse código ele ira gravar as mudanças no repositório, commitando os arquivos.
